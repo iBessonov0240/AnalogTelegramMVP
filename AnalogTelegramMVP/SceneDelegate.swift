@@ -13,10 +13,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+
+        window = UIWindow(windowScene: windowScene)
+        let viewController = setupTabBarViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+    }
+
+    func setupTabBarViewController() -> UITabBarController {
+
+        let contactsVC = ContactsViewController()
+        let contactsIcon = UITabBarItem(title: "Contacts", image: UIImage(systemName: "person.circle.fill"), tag: 0)
+        contactsVC.tabBarItem = contactsIcon
+
+        let chatsVC = ChatsViewController()
+        let chatsIcon = UITabBarItem(title: "Chats", image: UIImage(systemName: "bubble.left.and.exclamationmark.bubble.right"), tag: 1)
+        chatsVC.tabBarItem = chatsIcon
+
+        let settingsVC = SettingsViewController()
+        let settingsIcon = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 2)
+        settingsVC.tabBarItem = settingsIcon
+
+        let tabBar = UITabBarController()
+        tabBar.viewControllers = [contactsVC, chatsVC, settingsVC]
+
+        return tabBar
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

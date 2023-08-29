@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FAF69E462A9CC6FD005C4B15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF69E452A9CC6FD005C4B15 /* AppDelegate.swift */; };
 		FAF69E482A9CC6FD005C4B15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF69E472A9CC6FD005C4B15 /* SceneDelegate.swift */; };
-		FAF69E4A2A9CC6FD005C4B15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF69E492A9CC6FD005C4B15 /* ViewController.swift */; };
-		FAF69E4D2A9CC6FD005C4B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF69E4B2A9CC6FD005C4B15 /* Main.storyboard */; };
 		FAF69E4F2A9CC6FF005C4B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF69E4E2A9CC6FF005C4B15 /* Assets.xcassets */; };
 		FAF69E522A9CC6FF005C4B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF69E502A9CC6FF005C4B15 /* LaunchScreen.storyboard */; };
+		FAF69E5A2A9CC840005C4B15 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF69E592A9CC840005C4B15 /* SettingsViewController.swift */; };
+		FAF69E5C2A9CCE01005C4B15 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF69E5B2A9CCE01005C4B15 /* ChatsViewController.swift */; };
+		FAF69E5E2A9CCE1B005C4B15 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF69E5D2A9CCE1B005C4B15 /* ContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAF69E422A9CC6FD005C4B15 /* AnalogTelegramMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnalogTelegramMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF69E452A9CC6FD005C4B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF69E472A9CC6FD005C4B15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FAF69E492A9CC6FD005C4B15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FAF69E4C2A9CC6FD005C4B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAF69E4E2A9CC6FF005C4B15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF69E512A9CC6FF005C4B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAF69E532A9CC6FF005C4B15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF69E592A9CC840005C4B15 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		FAF69E5B2A9CCE01005C4B15 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		FAF69E5D2A9CCE1B005C4B15 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				FAF69E452A9CC6FD005C4B15 /* AppDelegate.swift */,
 				FAF69E472A9CC6FD005C4B15 /* SceneDelegate.swift */,
-				FAF69E492A9CC6FD005C4B15 /* ViewController.swift */,
-				FAF69E4B2A9CC6FD005C4B15 /* Main.storyboard */,
+				FAF69E592A9CC840005C4B15 /* SettingsViewController.swift */,
+				FAF69E5B2A9CCE01005C4B15 /* ChatsViewController.swift */,
+				FAF69E5D2A9CCE1B005C4B15 /* ContactsViewController.swift */,
 				FAF69E4E2A9CC6FF005C4B15 /* Assets.xcassets */,
 				FAF69E502A9CC6FF005C4B15 /* LaunchScreen.storyboard */,
 				FAF69E532A9CC6FF005C4B15 /* Info.plist */,
@@ -127,7 +130,6 @@
 			files = (
 				FAF69E522A9CC6FF005C4B15 /* LaunchScreen.storyboard in Resources */,
 				FAF69E4F2A9CC6FF005C4B15 /* Assets.xcassets in Resources */,
-				FAF69E4D2A9CC6FD005C4B15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +140,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAF69E4A2A9CC6FD005C4B15 /* ViewController.swift in Sources */,
 				FAF69E462A9CC6FD005C4B15 /* AppDelegate.swift in Sources */,
 				FAF69E482A9CC6FD005C4B15 /* SceneDelegate.swift in Sources */,
+				FAF69E5C2A9CCE01005C4B15 /* ChatsViewController.swift in Sources */,
+				FAF69E5A2A9CC840005C4B15 /* SettingsViewController.swift in Sources */,
+				FAF69E5E2A9CCE1B005C4B15 /* ContactsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FAF69E4B2A9CC6FD005C4B15 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAF69E4C2A9CC6FD005C4B15 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FAF69E502A9CC6FF005C4B15 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +288,6 @@
 				INFOPLIST_FILE = AnalogTelegramMVP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +315,6 @@
 				INFOPLIST_FILE = AnalogTelegramMVP/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
